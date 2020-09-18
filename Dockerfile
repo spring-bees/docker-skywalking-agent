@@ -7,7 +7,7 @@ ARG SKYWALKING_BIN=apache-skywalking-apm-${SKYWALKING_VERSION}.tar.gz
 ARG DOWNLOAD_URL=https://mirrors.tuna.tsinghua.edu.cn/apache/skywalking/${SKYWALKING_VERSION}/apache-skywalking-apm-${SKYWALKING_VERSION}.tar.gz
 
 ENV SKYWALKING_HOME=/skywalking \
-    SKYWALKING_AGENT=${SKYWALKING_HOME}/agent/skywalking-agent.jar \
+    SKYWALKING_AGENT=/skywalking/agent/skywalking-agent.jar \
     SW_AGENT_NAME=YourAppName
 
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
